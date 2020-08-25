@@ -3,20 +3,46 @@ enum Quantity {
     case kg(Double)
 }
 
-protocol Comparable {
+protocol ComparableItem: Comparable {
     var quantity: Quantity { get }
     var price: Double { get }
     var pricePerUnit: Double { get }
 }
 
-
-
-protocol ComparerProtocol {
-    func compareCheaper(_ a: Comparable, _ b: Comparable) -> Comparable
+struct Grocery: ComparableItem {
+    var quantity: Quantity
+    var price: Double
+    var pricePerUnit: Double
+    
+    init(quantity: Quantity, price: Double) {
+        self.quantity = quantity
+        self.price = price
+        
+        switch quantity {
+        case .unity(let n):
+            pricePerUnit = price / Double(n)
+        case .kg(let n):
+            
+        }
+    }
 }
 
-//class Comparer: ComparerProtocol {
-//    func compareCheaper(_ a: Comparable, _ b: Comparable) -> Comparable {
-//
-//    }
-//}
+extension Grocery: Comparable {
+    static func < (lhs: Grocery, rhs: Grocery) -> Bool {
+        lhs.pricePerUnit < rhs.pricePerUnit
+    }
+    
+    static func == (lhs: Grocery, rhs: Grocery) -> Bool {
+        lhs.pricePerUnit == rhs.pricePerUnit
+    }
+}
+
+struct Comparison<Item: ComparableItem> {
+    let cheaperItem: Item
+//    let priceDifferencePerUnit: Double
+//    let priceDifferenceTotal: Double
+    
+    init(a: Item, b: Item) {
+        cheaperItem = min(a, b)
+    }
+}
