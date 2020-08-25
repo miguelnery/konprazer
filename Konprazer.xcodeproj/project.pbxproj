@@ -15,6 +15,7 @@
 		2591F08F24F4AE3100E626AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2591F08D24F4AE3100E626AD /* LaunchScreen.storyboard */; };
 		2591F09A24F4AE3100E626AD /* KonprazerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2591F09924F4AE3100E626AD /* KonprazerTests.swift */; };
 		2591F0A524F4AE3100E626AD /* KonprazerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2591F0A424F4AE3100E626AD /* KonprazerUITests.swift */; };
+		2591F0B424F4AF1900E626AD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2591F0B324F4AF1900E626AD /* Comparer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2591F0A024F4AE3100E626AD /* KonprazerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonprazerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2591F0A424F4AE3100E626AD /* KonprazerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonprazerUITests.swift; sourceTree = "<group>"; };
 		2591F0A624F4AE3100E626AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2591F0B324F4AF1900E626AD /* Comparer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,10 @@
 		2591F08124F4AE2F00E626AD /* Konprazer */ = {
 			isa = PBXGroup;
 			children = (
-				2591F08224F4AE2F00E626AD /* AppDelegate.swift */,
-				2591F08424F4AE2F00E626AD /* SceneDelegate.swift */,
+				2591F0B224F4AE5700E626AD /* App */,
 				2591F08624F4AE2F00E626AD /* ContentView.swift */,
-				2591F08824F4AE3100E626AD /* Assets.xcassets */,
-				2591F08D24F4AE3100E626AD /* LaunchScreen.storyboard */,
-				2591F09024F4AE3100E626AD /* Info.plist */,
 				2591F08A24F4AE3100E626AD /* Preview Content */,
+				2591F0B324F4AF1900E626AD /* Comparer.swift */,
 			);
 			path = Konprazer;
 			sourceTree = "<group>";
@@ -134,6 +133,18 @@
 				2591F0A624F4AE3100E626AD /* Info.plist */,
 			);
 			path = KonprazerUITests;
+			sourceTree = "<group>";
+		};
+		2591F0B224F4AE5700E626AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2591F08224F4AE2F00E626AD /* AppDelegate.swift */,
+				2591F08424F4AE2F00E626AD /* SceneDelegate.swift */,
+				2591F08824F4AE3100E626AD /* Assets.xcassets */,
+				2591F08D24F4AE3100E626AD /* LaunchScreen.storyboard */,
+				2591F09024F4AE3100E626AD /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 			files = (
 				2591F08324F4AE2F00E626AD /* AppDelegate.swift in Sources */,
 				2591F08524F4AE2F00E626AD /* SceneDelegate.swift in Sources */,
+				2591F0B424F4AF1900E626AD /* Comparer.swift in Sources */,
 				2591F08724F4AE2F00E626AD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Konprazer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Konprazer/Info.plist;
+				INFOPLIST_FILE = Konprazer/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Konprazer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Konprazer/Info.plist;
+				INFOPLIST_FILE = Konprazer/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
