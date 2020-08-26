@@ -9,11 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
-//    var hue: String {
-//        
-//    }
+    let comp = Comparison(Grocery(.kg(0.700), price: 22.4),
+                          Grocery(.kg(1.4), price: 37.69))
+
+    var hue: String {
+        String(comp.cheaperItem.price)
+    }
+
+    var lol: String {
+        String(comp.priceDifferenceTotal)
+    }
+
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(hue)
+            Text(lol)
+        }
     }
 }
 

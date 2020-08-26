@@ -10,20 +10,20 @@ protocol ComparableItem: Comparable {
 }
 
 struct Grocery: ComparableItem {
-    var quantity: Quantity
-    var price: Double
-    var pricePerUnit: Double
-    
-    init(quantity: Quantity, price: Double) {
-        self.quantity = quantity
-        self.price = price
-        
+    let quantity: Quantity
+    let price: Double
+    var pricePerUnit: Double {
         switch quantity {
         case .unity(let n):
-            pricePerUnit = price / Double(n)
+            return price / Double(n)
         case .kg(let n):
-            
+            return price / n
         }
+    }
+    
+    init(_ quantity: Quantity, price: Double) {
+        self.quantity = quantity
+        self.price = price
     }
 }
 
@@ -40,9 +40,10 @@ extension Grocery: Comparable {
 struct Comparison<Item: ComparableItem> {
     let cheaperItem: Item
 //    let priceDifferencePerUnit: Double
-//    let priceDifferenceTotal: Double
+    let priceDifferenceTotal: Double
     
-    init(a: Item, b: Item) {
+    init(_ a: Item, _ b: Item) {
         cheaperItem = min(a, b)
+        priceDifferenceTotal = abs(a.price - b.price)
     }
 }

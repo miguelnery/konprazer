@@ -103,8 +103,8 @@
 			children = (
 				2591F0B224F4AE5700E626AD /* App */,
 				2591F08624F4AE2F00E626AD /* ContentView.swift */,
-				2591F08A24F4AE3100E626AD /* Preview Content */,
 				2591F0B324F4AF1900E626AD /* Comparer.swift */,
+				2591F08A24F4AE3100E626AD /* Preview Content */,
 			);
 			path = Konprazer;
 			sourceTree = "<group>";
@@ -448,8 +448,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Konprazer/Preview Content\"";
+				DEVELOPMENT_TEAM = 9KAJM7V6T4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Konprazer/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,8 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Konprazer/Preview Content\"";
+				DEVELOPMENT_TEAM = 9KAJM7V6T4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Konprazer/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
