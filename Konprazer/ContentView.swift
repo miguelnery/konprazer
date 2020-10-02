@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    let comp = Comparison(Grocery(.kg(0.700), price: 22.4),
-                          Grocery(.kg(1.4), price: 37.69))
+//    let comp = Comparison(Grocery(.kg(0.700), price: 22.4),
+//                          Grocery(.kg(1.4), price: 37.69))
 
     @State var aQuantity: String = ""
     @State var aPrice: String = ""
@@ -18,36 +18,36 @@ struct ContentView: View {
     @State var bPrice: String = ""
     @State var result: String = ""
 
-    var hue: String {
-        String(comp.cheaperItem.price)
-    }
-
-    var lol: String {
-        String(comp.priceDifferenceTotal)
-    }
+//    var hue: String {
+//        String(comp.cheaperItem.price)
+//    }
+//
+//    var lol: String {
+//        String(comp.priceDifferenceTotal)
+//    }
 
     var body: some View {
-        VStack {
-            TextFields(aText: $aQuantity,
-                       bText: $bQuantity)
-            TextFields(aText: $aPrice,
-                       bText: $bPrice)
-            Button("Hue") {
-                guard let aq = Double(self.aQuantity),
-                    let ap = Double(self.aPrice),
-                    let bq = Double(self.bQuantity),
-                    let bp = Double(self.bPrice) else { print("wtf");return }
-                print(aq)
-                print(ap)
-                print(bq)
-                print(bp)
-                let result = Comparison(Grocery(.kg(aq), price: ap),
-                                        Grocery(.kg(bq), price: bp))
-                self.result = String(result.cheaperItem.price)
-
-            }
+//        VStack {
+//            TextFields(aText: $aQuantity,
+//                       bText: $bQuantity)
+//            TextFields(aText: $aPrice,
+//                       bText: $bPrice)
+//            Button("Hue") {
+//                guard let aq = Double(self.aQuantity),
+//                    let ap = Double(self.aPrice),
+//                    let bq = Double(self.bQuantity),
+//                    let bp = Double(self.bPrice) else { print("wtf");return }
+//                print(aq)
+//                print(ap)
+//                print(bq)
+//                print(bp)
+//                let result = Comparison(Grocery(.kg(aq), price: ap),
+//                                        Grocery(.kg(bq), price: bp))
+//                self.result = String(result.cheaperItem.price)
+//
+//            }
             Text(result)
-        }
+//        }
     }
 }
 
