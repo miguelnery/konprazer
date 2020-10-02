@@ -1,4 +1,4 @@
 enum Quantity {
-    case unity(Int)
+    case units(Int)
     case kg(Double)
 }
