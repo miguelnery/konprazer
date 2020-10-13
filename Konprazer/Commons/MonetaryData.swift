@@ -1,23 +1,23 @@
 import Foundation
 
-struct MonetaryValue {
-    let price: Double
+struct MonetaryData {
+    let totalPrice: Double
     let units: Int
     let quantity: Quantity
     let date: Date?
     var pricePerUnit: Double {
-        calculatePricePerUnit(price: price, quantity: quantity)
+        calculatePricePerUnit(price: totalPrice, quantity: quantity)
     }
 
     init(price: Double, units: Int, quantity: Quantity, date: Date? = nil) {
-        self.price = price
+        self.totalPrice = price
         self.units = units
         self.quantity = quantity
         self.date = date
     }
 }
 
-extension MonetaryValue {
+extension MonetaryData {
     private func calculatePricePerUnit(price: Double, quantity: Quantity) -> Double {
         switch quantity {
         case .units(let n):
@@ -28,12 +28,12 @@ extension MonetaryValue {
     }
 }
 
-extension MonetaryValue: Comparable {
-    static func < (lhs: MonetaryValue, rhs: MonetaryValue) -> Bool {
+extension MonetaryData: Comparable {
+    static func < (lhs: MonetaryData, rhs: MonetaryData) -> Bool {
         lhs.pricePerUnit < rhs.pricePerUnit
     }
 
-    static func == (lhs: MonetaryValue, rhs: MonetaryValue) -> Bool {
+    static func == (lhs: MonetaryData, rhs: MonetaryData) -> Bool {
         lhs.pricePerUnit == rhs.pricePerUnit
     }
 }

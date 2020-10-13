@@ -17,7 +17,7 @@
 		2591F0A524F4AE3100E626AD /* KonprazerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2591F0A424F4AE3100E626AD /* KonprazerUITests.swift */; };
 		AC81AD782526391C00E3F84B /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81AD772526391C00E3F84B /* Quantity.swift */; };
 		AC81AD7A2526392200E3F84B /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81AD792526392200E3F84B /* Grocery.swift */; };
-		AC81AD8125263B3300E3F84B /* MonetaryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81AD8025263B3300E3F84B /* MonetaryValue.swift */; };
+		AC81AD8125263B3300E3F84B /* MonetaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81AD8025263B3300E3F84B /* MonetaryData.swift */; };
 		AC81ADB125266DF600E3F84B /* GroceryFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81ADB025266DF600E3F84B /* GroceryFetcher.swift */; };
 		ACAD5B3E2526C87200801E0A /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD5B3D2526C87200801E0A /* GroceryList.swift */; };
 		ACAD5B422526CE3600801E0A /* Sequence+keyPathFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD5B412526CE3600801E0A /* Sequence+keyPathFilter.swift */; };
@@ -57,7 +57,7 @@
 		2591F0A624F4AE3100E626AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC81AD772526391C00E3F84B /* Quantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quantity.swift; sourceTree = "<group>"; };
 		AC81AD792526392200E3F84B /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
-		AC81AD8025263B3300E3F84B /* MonetaryValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryValue.swift; sourceTree = "<group>"; };
+		AC81AD8025263B3300E3F84B /* MonetaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryData.swift; sourceTree = "<group>"; };
 		AC81ADB025266DF600E3F84B /* GroceryFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryFetcher.swift; sourceTree = "<group>"; };
 		ACAD5B3D2526C87200801E0A /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		ACAD5B412526CE3600801E0A /* Sequence+keyPathFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+keyPathFilter.swift"; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			children = (
 				ACAD5B402526CE1D00801E0A /* Extensions */,
 				AC81AD772526391C00E3F84B /* Quantity.swift */,
-				AC81AD8025263B3300E3F84B /* MonetaryValue.swift */,
+				AC81AD8025263B3300E3F84B /* MonetaryData.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				2591F08324F4AE2F00E626AD /* AppDelegate.swift in Sources */,
 				ACAD5B422526CE3600801E0A /* Sequence+keyPathFilter.swift in Sources */,
 				ACAD5B3E2526C87200801E0A /* GroceryList.swift in Sources */,
-				AC81AD8125263B3300E3F84B /* MonetaryValue.swift in Sources */,
+				AC81AD8125263B3300E3F84B /* MonetaryData.swift in Sources */,
 				2591F08524F4AE2F00E626AD /* SceneDelegate.swift in Sources */,
 				AC81AD782526391C00E3F84B /* Quantity.swift in Sources */,
 				2591F08724F4AE2F00E626AD /* ContentView.swift in Sources */,
